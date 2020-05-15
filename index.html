@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon1.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>adopta mascota!</title>
+  </head>
+  <body id="home-pg">
+    <!-- Modal -->
+    <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" 
+    aria-labelledby="contact-modal-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contact-modal-label">Contacto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name-in">Nombre*</label>
+                <input type="text" class="form-control" id="name-in" placeholder="Ingresa tu nombre" required>
+                <div class="valid-feedback">
+                  Bien!
+                </div>
+                <div class="invalid-feedback">
+                  mal!
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email-in">Email*</label>
+                <input type="email" class="form-control" id="email-in" placeholder="example@gmail.com" aria-describedat="email-help">
+                <small id="email-help" class="form-text text-muted">No compartiremos tus datos</small>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="comment-in">Comentarios</label>
+                <textarea class="form-control" id="comment-in" rows="4" required></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="receive-info">
+                <label class="form-check-label" for="receive-info">Quiero recibir correos informativos</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container main-container">
+        <!-- menu / nav -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="default-navbar">
+            <a class="navbar-brand" href="#">Adopta mascota</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-option" aria-controls="navbar-option" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-option">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./assets/html/adopciones.html">Adopciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hogar temporal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Donativos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#contact-modal">Contactos</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <!-- carousel -->
+        <section class="section-carousel">
+            <div class="alert alert-success alert-dismissible text-center" 
+            role="alert" id="contact-alert" style="display: none;">
+              <strong>Mensaje enviado</strong> Gracias por contactarnos 
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div id="home-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#home-carousel" data-slide-to="1"></li>
+                  <li data-target="#home-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/carousel/4.jpeg" class="d-block w-100" alt="perros en adopcion">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Adopta mascota</h5>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/carousel/2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/carousel/4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <!-- options -->
+        <section class="options-sect">
+            <div class="options-area d-flex justify-content-around align-items-start flex-wrap">
+                <div class="opt">
+                    <p class="opt-title"> Adopcion</p>
+                    <img class="opt-img" src="./assets/images/carousel/1.jpg">
+                    <p class="opt-desc">assaasdjsndsna</p>
+                    <p class="badge badge-dark">4 mascotas disponibles</p>
+                    <br><button class="btn btn-orange"> Buscar </button>
+                </div>
+
+                <div class="opt mg-top">
+                    <p class="opt-title">Hogar temporal</p>
+                    <img class="opt-img" src="./assets/images/carousel/2.jpg">
+                    <p class="opt-desc">assaasdjsndsna</p>
+                    <p class="badge badge-dark">8 disponibles</p>
+                    <br><button class="btn btn-orange"> Buscar </button>
+                </div>
+
+                <div class="opt mg-top">
+                    <p class="opt-title"> voluntariado</p>
+                    <img class="opt-img" src="./assets/images/carousel/3.jpg">
+                    <p class="opt-desc">assaasdjsndsna</p>
+                    <p class="badge badge-dark">12 disponibles</p>
+                    <br><button class="btn btn-orange"> Buscar </button>
+                </div>
+
+                <div class="opt mg-top">
+                    <p class="opt-title"> Donaciones </p>
+                    <img class="opt-img" src="./assets/images/carousel/2.jpg">
+                    <p class="opt-desc">assaasdjsndsna</p>
+                    <p class="badge badge-dark">16 disponibles</p>
+                    <br><button class="btn btn-orange"> Buscar </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Adopcion -->
+        <section class="adoptions-sect">
+          <div class="container monthly-adoptions-area">
+            <h3 class="section-title text-center">Adoptados del mes</h3>
+            <div class="row">
+              <div class="img-container col-12 col-md-6 col-lg-3">
+                <figure class="figure">
+                  <img src="./assets/images/carousel/gato-con-botas.jpg" class="figure-img img-fluid rounded" alt="adoptados este mes"
+                  data-toggle="tooltip" data-placement="bottom" title="Gracias por adoptarme familia ">
+                  <figcaption class="figure-caption"> Gato con botas</figcaption>
+                </figure>
+              </div>
+
+              <div class="img-container col-12 col-md-6 col-lg-3">
+                <figure class="figure">
+                  <img src="./assets/images/carousel/manchitas.jpeg" class="figure-img img-fluid rounded" alt="adoptados este mes">
+                  <figcaption class="figure-caption"> machitas</figcaption>
+                </figure>
+              </div>
+  
+              <div class="img-container col-6 col-md-6 col-lg-3">
+                <figure class="figure">
+                  <img src="./assets/images/carousel/mini.jpg" class="figure-img img-fluid rounded" alt="adoptados este mes">
+                  <figcaption class="figure-caption"> minimikie</figcaption>
+                </figure>
+              </div>
+  
+              <div class="img-container col-6 col-md-6 col-lg-3">
+                <figure class="figure">
+                  <img src="./assets/images/carousel/yo.jpg" class="figure-img img-fluid rounded" alt="adoptados este mes">
+                  <figcaption class="figure-caption"> bebe</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var form = document.getElementById('contact-form');
+          var validation =  form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }else{
+                event.preventDefault();
+                event.stopPropagation();
+                $('#contact-modal').modal('hide')
+                $('#contact-alert').show();
+                setTimeout(() => {
+                  $('#contact-alert').hide();
+                },10000);
+              }
+              form.classList.add('was-validated');
+            }, false);  
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
